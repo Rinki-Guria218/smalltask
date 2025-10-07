@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task5.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+        <div class="form">
+                  
+            <h2>member</h2>
+            <div class="a">
+                <input type="text" placeholder="first_name">
+                <input type="text" placeholder="last_name">
+            </div>
+         
+
+            <h2>member</h2>
+            <div class="a">
+                <input type="text" placeholder="first_name">
+                <input type="text" placeholder="last_name">
+            </div>
+
+        </div>
+               <div class="button"><button onclick="fun()">add</button></div> 
+
+</div>
+    </div>
+</body>
+<script>
+    function fun(){
+
+        var x=document.getElementsByClassName("form")[0];
+       
+   
+
+        var y=document.createElement("h2");
+ y.textContent = 'member';
+        y.innerHTML+=`
+            <div class="a">
+                <input type="text" placeholder="first_name">
+                <input type="text" placeholder="last_name">
+            </div> `
+      
+       document.getElementsByClassName("form")[0].appendChild(y);
+           
+           
+    }
+</script>
+</html>

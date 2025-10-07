@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    position: relative;
+    height:725px;
+    overflow: hidden;
+    
+}
+.main button{
+    font-size: 19px;
+    padding: 7px 15px;
+    background-color: rgb(2, 150, 150);
+    border: none;
+    margin: 15px 10px;
+    color: rgb(238, 238, 238);
+    border-radius: 10px;
+}
+.main .popup{
+    border: 1px solid gray;
+        border-radius: 10px;
+    width: 300px;
+    position: absolute;
+   right:-310px;
+       top: 100px;
+    background-color:rgb(151, 254, 151);
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid green;
+}
+.main .popup .right i{
+font-size: 25px;
+color: red;
+}
+.main .popup .left i{
+font-size: 25px;
+}
+.main .popup .left{
+    display: flex;
+    align-items: center;
+}

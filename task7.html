@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="task7.css">
+<body>
+    <div class="main">
+        <div class="box" id="box">
+            <!-- <div class="a"> -->
+             <div class="tab">tab1</div>
+            <div class="tab">tab2</div>
+
+            <!-- </div> -->
+            
+             <button onclick="fun()" class="btn">add task</button>
+        </div>
+    </div>
+</body>
+<script>
+// var div=document.createElement("div");
+//        var y=document.getElementsByClassName("b")[0];
+//      var z=y.insertBefore(div,y.firstElementChild);
+//      z.className="z";
+
+        function fun(){
+        var x=document.getElementsByClassName("b")[0];   
+        var input=prompt("enter your opinion")
+var div=document.createElement("div");
+       div.className="tab";
+       div.innerText=(input);
+    var parent=document.getElementById("box");
+           var be=document.getElementsByClassName("btn")[0];
+           parent.insertBefore(div,be);
+    // document.getElementsByClassName("a")[0].appendChild(div);
+
+        }
+   
+// 
+</script>
+</html>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-left">
+            <div class="main-left-inner">
+                <h1>How do you want recruiters to contact you?</h1>
+                <div class="sec">
+                    <div class="sec-left">
+                        <div class="img"></div>
+                        <div class="btn"><button>Photo upload</button></div>
+                    </div>
+                    <div class="sec-right">
+                        <p>Include your full name and at least email or phone number</p>
+                        <div class="row">
+                            <div class="row-left">
+                                <span>First name</span><br>
+                                <input type="text" placeholder="RINKI" onkeyup="f_name()" id="f_name">
+                            </div>
+                            <div class="row-right">
+                                <span>Surname</span><br>
+                                <input type="text" placeholder="GURIA" onkeyup="f_name()" id="s_name">
+                            </div>
+                        </div>
+
+                        <div class="row1">
+                            <span>City</span><br>
+                                <input type="text" placeholder="contai" onkeyup="ad()" id="city">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                            <div class="row-left">
+                                <span>Country</span><br>
+                                <input type="text" placeholder="INDIA" onkeyup="ad()" id="Country">
+                            </div>
+                            <div class="row-right">
+                                <span>Pin code</span><br>
+                                <input type="number" placeholder="721452" onkeyup="ad()" id="pin">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="row-left">
+                                <span>Phone</span><br>
+                                <input type="number" placeholder="9999999999" id="phone" onkeyup="phone()" >
+                            </div>
+                            <div class="row-right">
+                                <span>Email</span><br>
+                                <input type="email" placeholder="bchj@gmail.com" id="gmail" onkeyup="gmail()">
+                            </div>
+                        </div>
+<!-- --------------------------------------------------------------------------- -->
+                       <div class="second">
+                          <h2>Add your Experience</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, alias quae possimus voluptatum error magni suscipit animi exercitationem non ad.</p>
+
+                          <div class="row">
+                            <div class="row-left">
+                                <span>Job title</span><br>
+                                <input type="text" placeholder="" id="title" onkeyup="jobtitle()">
+                            </div>
+                            <div class="row-right">
+                                <span>employer</span><br>
+                                <input type="text" placeholder="" id="employer" onkeyup="employer()">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="row-left">
+                                <span>Start Date</span><br>
+                                <input type="date" id="startdate" onkeyup="d()">
+                            </div>
+                            <div class="row-right">
+                                <span>End Date</span><br>
+                                <input type="date" id="lastdate" onkeyup="d()">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="row-left">
+                                <span>City</span><br>
+                                <input type="text" placeholder="New delhi" onkeyup="experi()" id="ecity">
+                            </div>
+                            <div class="row-right">
+                                <span>Country</span><br>
+                                <input type="text" placeholder="INDIA" onkeyup="experi()" id="ecountry">
+                            </div>
+                        </div>
+
+                       </div>
+                         
+<!-- ---------------------------------------------------------------------------------------- -->
+
+
+
+
+                    <div class="second">
+                          <h2>Add your Education</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, alias quae possimus voluptatum error magni suscipit animi exercitationem non ad.</p>
+
+                          <div class="row">
+                            <div class="row-left">
+                                <span>School name</span><br>
+                                <input type="text" placeholder="School name..." onkeyup="schoolname()" id="schoolname">
+                            </div>
+                            <div class="row-right">
+                                <span>school location</span><br>
+                                <input type="text" placeholder="school location........">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="row-left">
+                                <span>Qualification</span><br>
+                                <input type="text" placeholder="" onkeyup="qualification()" id="qualification">
+                            </div>
+                            <div class="row-right">
+                                <span>Graduation Year</span><br>
+                                <input type="date" onkeyup="year()" id="year">
+                            </div>
+                        </div>
+
+
+                        <div class="row2-outer"><span>Describe your education</span></div>
+                        <div class="row2">
+                            <div class="row2-inner">
+                                <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                <div class="text">Dissertation in <span>[Area of expertise]</span></div>
+                            </div>
+                            <div class="row2-inner">
+                               <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                 <div class="text">Coursework in <span>[Area of expertise]</span></div>
+                            </div>
+                        </div>
+
+                         
+                         <div class="row2">
+                            <div class="row2-inner">
+                                <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                <div class="text"> <span>[Degree]</span>Graduate</div>
+                            </div>
+                            <div class="row2-inner">
+                               <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                 <div class="text">Member of <span> [Type]</span> Union</div>
+                            </div>
+                        </div>
+
+
+                        <div class="row2">
+                            <div class="row2-inner">
+                                <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                <div class="text"> <span>[Type]</span>Academic Achievement Award</div>
+                            </div>
+                            
+                        </div>
+
+
+
+
+                        <div class="row1">
+                            <div class="des">
+                                <div class="des-top">
+                                    <div class="des-top-left">
+                                        <i class="fa-solid fa-bold"></i>
+                                        <i class="fa-solid fa-italic"></i>
+                                        <i class="fa-solid fa-underline"></i>
+                                    </div>
+                                    <div class="des-top-right">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        <i class="fa-solid fa-rotate-right"></i>
+                                    </div>
+                                </div>
+                                <textarea name="" id="" placeholder="enter some details..........."></textarea>
+
+                            </div>
+                        </div>
+
+                          
+
+                       </div>
+                         
+<!-- ------------------------------------------------------------------------------------------------->
+ 
+
+                       
+                      <div class="part">
+                        <h2>Add your skills</h2>
+                         
+                           <div class="row1">
+                            <div class="des">
+                                <!-- <div class="des-top">
+                                    <div class="des-top-left">
+                                        <i class="fa-solid fa-bold"></i>
+                                        <i class="fa-solid fa-italic"></i>
+                                        <i class="fa-solid fa-underline"></i>
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        <i class="fa-solid fa-rotate-right"></i>
+                                    </div>
+                                    <div class="des-top-right">
+                                        
+                                    </div>
+                                </div>
+                                <textarea name="" id="" placeholder="add your skills here."></textarea> -->
+
+
+                                   <div id="sourceDiv">
+        <textarea id="editor"></textarea>
+    </div>
+
+
+    <div id="targetDiv" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
+    
+        <div id="livePreview"></div>
+    </div>
+
+
+
+
+
+                                <div class="des-bottom">
+                                    <p>Search recommended skills by job title, industry or keyword</p>
+                                    <input type="text" placeholder="Job title,industry or keyword" class="in">
+                                    <div class="sec2">
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text"> Communication skills</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text">Problem-solving</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text">Willingness to learn</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text">Calm under pressure</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text"> Active listening</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text"> Leadership</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text"> Team building</div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                      </div>
+
+<!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+                       <div class="part">
+                        <h2>Add your summary</h2>
+                         
+                           <div class="row1">
+                            <div class="des">
+                                <div class="des-top">
+                                    <div class="des-top-left">
+                                        <i class="fa-solid fa-bold"></i>
+                                        <i class="fa-solid fa-italic"></i>
+                                        <i class="fa-solid fa-underline"></i>
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        <i class="fa-solid fa-rotate-right"></i>
+                                    </div>
+                                    <div class="des-top-right">
+                                        
+                                    </div>
+                                </div>
+                                <textarea name=""  placeholder="add your skills here."  onkeyup="details()" id="details"></textarea>
+
+
+                                <!-- <div id="sourceDiv" style="margin:10px 0px 0px 0px;">
+        <textarea id="editor"></textarea>
+    </div>
+
+
+    <div id="targetDiv" style="border: 1px solid #ccc; padding: 10px; margin-top: 20px;">
+    
+        <div id="livePreview"></div>
+    </div>
+ -->
+
+
+                                <div class="des-bottom">
+                                    <p>Search recommended skills by job title, industry or keyword</p>
+                                    <input type="text" placeholder="Job title,industry or keyword" class="in" >
+                                    <div class="sec2">
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()">Productive employee with proven track record of successful project management and producing quality outcomes through leadership and team motivation. Works with clients to determine requirements and provide excellent service.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()">Responsible [Job Title], passionate about delivering outstanding quality and service. Offering [Number] years of experience in industry with history of recognition for performance.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()">Trustworthy [Job Title] with [Number] years of practical experience and dedicated work ethic. Self-motivated to consistently provide first-class results in line with stringent targets and deadlines.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()">Dedicated [Job Title] with experience in achieving tangible results and cross-team collaboration. Proactive and excited to partner with like-minded individuals to achieve goals.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()"> Adaptable [Job Title] with extensive experience providing first-class results. Meets job demands and deadlines through diligent work-ethic and dedication to quality.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()"> Motivated [Job Title] with [Number] years of progressive experience. Energetic self-starter and team builder. Navigates high-stress situations and achieves goals on time and under budget.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()"> Detail-orientated [Job Title] adept at making critical decisions, managing deadlines and conducting team reviews. With expertise in analysis and quantitative problem-solving skills, dedicated to company growth and improvements.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()">Qualified [Job Title] with extensive background in advanced management processes. Utilises superior communication skills to build meaningful, trusting relationships that exceed client demands. Highly skilled project manager with outstanding team leadership abilities to meet targets consistently.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()"> Customer-focused [Type] manager, successfully contributing to company profits by improving team efficiency and productivity. Skilled at effective negotiations and upselling techniques. Utilises excellent organisational skill to enhance efficiency and lead teams to achieve outstanding sales.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()"> Confident [Job Title] successful at increasing monthly revenue using insightful marketing strategies and aggressive product development. Skilled at understanding customer and employee requests and meeting needs. Furthers success by strengthening staff training, streamlining internal systems and facilitating sales techniques.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()">Expert [Job Title] bringing [Number] years of expertise in [Industry]. Effectively manages assignments and team members. Dedicated to self-development to provide expectation-exceeding service.</div>
+                                        </div>
+
+                                        <div class="sec-inner">
+                                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                                            <div class="text" onkeyup="t()">[Area of certification]-certified [Job Title] with vast experience in effective and efficient operations. Displays outstanding knowledge and practical expertise to provide exceptional all-round service.</div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                      </div>
+
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+
+               <div class="part">
+                <h2>Language</h2>
+                <input type="checkbox" id="box" > Bengali <br>
+                <input type="checkbox" id="box" > English<br>
+                <input type="checkbox" id="box" > Hindi<br>
+                <input type="checkbox" id="box" > German<br>
+                <input type="checkbox" id="box" > Telegu<br>
+
+               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+                      
+                         
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+                        <div class="row">
+                            <div class="row-left">
+                                <button id="button1">Back</button>
+                            </div>
+                            <div class="row-right" id="btn">
+                              <button id="button2">Continue</button>
+                            </div>
+                        </div>
+
+
+            </div>
+        </div>
+
+        <div class="main-right">
+            <div class="main-right-inner">
+                <div class="main-right-inner-left">
+                     <div class="image"></div>
+                     <div class="contact">
+                        <span>CONTACT </span>
+                        <div class="art">
+                            <div class="art-left"><i class="fa-solid fa-phone"></i></div>
+                            <div class="art-right" id="phone2"></div>
+                        </div>
+
+
+                        <div class="art">
+                            <div class="art-left"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="art-right" id="gmail2"></div>
+                        </div>
+
+
+                        <div class="art">
+                            <div class="art-left"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="art-right" id="add"></div>
+                        </div>
+
+
+
+                     </div>
+
+                    <!-- <div class="about">
+                        <span>ABOUT ME</span>
+                        <p>Lorem ipsum dolor sitddddddddddddddddd amet, consectetur adipisicing elit. Voluptas necessitatibus, totam accusantium exercitationem temporibus iste quod pariatur consequuntur neque praesentium.</p>
+                    </div> -->
+                        <div class="skills">
+                         <span>SKILLS</span>
+                            <ul>
+                                <li>html</li>
+                                <li>css</li>
+                                <li>js</li>
+                                <li>php</li>
+                                <li>python</li>
+                            </ul>
+                        </div>
+
+                        <div class="language">
+                        <span>LANGUAGE</span>
+                            <ul>
+                                <li>html</li>
+                                <li>css</li>
+                                <li>js</li>
+                                <li>php</li>
+                                <li>python</li>
+                            </ul>
+                        </div>
+
+                    
+                </div>
+
+                <div class="main-right-inner-right">
+                   <div class="heading">
+                    <h2 id="name">RINKI GURIA</h2>
+                    <!-- <div id="name"></div> -->
+                    <small>WEB DEVELOPER</small>
+                   </div>
+                   <div class="outer">
+                   <div class="about">
+                    <div class="h">
+                       <div class="h_l"><i class="fa-solid fa-user"></i></div> 
+                        <div class="h_r"><span>PROFESSIONAL SUMMARY</span></div>
+                    </div>
+                    <p id="details1"></p>
+                  </div>
+                  </div>
+                  
+                  <div class="education">
+                    <i class="fa-solid fa-graduation-cap"></i><span>EDUCATION</span>
+                    <div class="education1">
+                           <div class="education-inner">
+                            <div class="l" ><h6 id="qualification1"></h6></div>
+                            <div class="r"><h5 id="year1"></h5></div>
+                           </div>
+                           <small id="schoolname1"></small>
+                    </div>
+
+                    
+
+                   
+                  </div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------->
+                  <div class="experience">
+                   <i class="fa-solid fa-briefcase"></i> <span>EXPERIENCE</span><br>
+                   <small id="title2"></small><br>
+                   <small id="employer1"></small><br>
+                   <small id="date1"></small><br>
+                   <small id="experi"></small>
+
+
+                  </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+
+
+// ------------------------------------------------------------------------
+ 
+        CKEDITOR.replace('editor');
+
+      
+        CKEDITOR.instances.editor.on('contentDom', function () {
+            this.document.on('keyup', function () {
+  
+                const editorData = CKEDITOR.instances.editor.getData();
+
+              
+                document.getElementById('livePreview').innerHTML = editorData;
+            });
+        });
+   
+
+// -----------------------------------------------------------------------------------
+
+
+
+
+   function f_name(){
+   let name= document.getElementById("f_name").value;
+   let x=name.toUpperCase();
+      let Surname= document.getElementById("s_name").value;
+   let y=Surname.toUpperCase();
+
+document.getElementById("name").innerText=x+" "+y;
+   }
+
+   function phone(){
+   let phone= document.getElementById("phone");
+document.getElementById("phone2").innerText=phone.value;
+   }
+
+    function gmail(){
+   let gmail= document.getElementById("gmail");
+document.getElementById("gmail2").innerText=gmail.value;
+   }
+
+
+   function ad(){
+   let city= document.getElementById("city");
+    let Country= document.getElementById("Country");
+     let pin= document.getElementById("pin");
+document.getElementById("add").innerText=city.value+","+Country.value+","+pin.value;
+
+   }
+
+//    --------------------------------------------------------------------------------
+
+function schoolname(){
+   let schoolname= document.getElementById("schoolname");
+document.getElementById("schoolname1").innerText=schoolname.value;
+   }
+
+function qualification(){
+   let qualification= document.getElementById("qualification");
+document.getElementById("qualification1").innerText=qualification.value;
+   }
+
+   function year(){
+   let year= document.getElementById("year");
+document.getElementById("year1").innerText=year.value;
+   }
+
+//    ------------------------------------------------------------------------------------
+
+function jobtitle(){
+   let title= document.getElementById("title");
+document.getElementById("title2").innerText=title.value;
+   }
+
+
+   function employer(){
+   let employer= document.getElementById("employer");
+document.getElementById("employer1").innerText=employer.value;
+   }
+
+   function d(){
+   let startdate= document.getElementById("startdate");
+      let lastdate= document.getElementById("lastdate");
+
+document.getElementById("date1").innerText=startdate.value+"-"+lastdate.value;
+   }
+
+
+   function experi(){
+   let city= document.getElementById("ecity");
+    let Country= document.getElementById("ecountry");
+document.getElementById("experi").innerText=city.value+","+Country.value;
+
+   }
+
+
+function details(){
+   let details= document.getElementById("details");
+document.getElementById("details1").innerText=details.value;
+   }
+</script>
+</html>

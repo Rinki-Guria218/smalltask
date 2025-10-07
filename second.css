@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    position: relative;
+    height:710px;
+    overflow: hidden;
+}
+.main button{
+    font-size: 19px;
+    padding: 7px 15px;
+    background-color: rgb(2, 150, 150);
+    border: none;
+    margin: 15px 10px;
+    color: rgb(238, 238, 238);
+    border-radius: 10px;
+}
+.main #popup{
+    border: 1px solid gray;
+        border-radius: 10px;
+box-shadow: 0px 2px 2px 0px;
+    width: 300px;
+    position: absolute;
+    top: -300px;
+    left: 400px;
+    background-color: white;
+}
+.main #popup .top{
+    width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.main #popup .top i{
+    margin: 5px;
+}
+.main #popup .bottom{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+   justify-items: center;
+   align-content: center;
+
+}
+.main #popup .bottom table{
+    width: 90%;
+    border-collapse: collapse;
+
+}
+.main #popup .bottom table tr{
+    padding: 5px 0px;
+     border: 1px solid gray;
+}
+.main #popup .bottom table th{
+    border: 1px solid gray;
+}
+.main #popup .bottom table td{
+    border: 1px solid gray;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------- */
+.main #popup1{
+    border: 1px solid gray;
+        border-radius: 10px;
+box-shadow: 0px 2px 2px 0px;
+    width: 300px;
+    position: absolute;
+    left:-310px;
+    top: 150px;
+    background-color: white;
+}
+.main #popup1 .top{
+    width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.main #popup1 .top i{
+    margin: 5px;
+}
+.main #popup1 .bottom{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+   justify-items: center;
+   align-content: center;
+
+}
+.main #popup1 .bottom table{
+    width: 90%;
+    border-collapse: collapse;
+
+}
+.main #popup1 .bottom table tr{
+    padding: 5px 0px;
+     border: 1px solid gray;
+}
+.main #popup1 .bottom table th{
+    border: 1px solid gray;
+}
+.main #popup1 .bottom table td{
+    border: 1px solid gray;
+    text-align: center;
+}
+/* ---------------------------------------------------------- */
+.main #popup2{
+    border: 1px solid gray;
+        border-radius: 10px;
+box-shadow: 0px 2px 2px 0px;
+    width: 300px;
+    position: absolute;
+     bottom: -850px;
+    left: 400px;
+    background-color: white;
+    /* transition: 0.5s all ease; */
+}
+.main #popup2 .top{
+    width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.main #popup2 .top i{
+    margin: 5px;
+}
+.main #popup2 .bottom{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+   justify-items: center;
+   align-content: center;
+
+}
+.main #popup2 .bottom table{
+    width: 90%;
+    border-collapse: collapse;
+
+}
+.main #popup2 .bottom table tr{
+    padding: 5px 0px;
+     border: 1px solid gray;
+}
+.main #popup2 .bottom table th{
+    border: 1px solid gray;
+}
+.main #popup2 .bottom table td{
+    border: 1px solid gray;
+    text-align: center;
+}
+/* ---------------------------------------------------------- */
+.main #popup3{
+    border: 1px solid gray;
+        border-radius: 10px;
+box-shadow: 0px 2px 2px 0px;
+    /* height: 300px; */
+    width: 300px;
+    position: absolute;
+   right:-300px;
+    top: 150px;
+    /* overflow: hidden; */
+    background-color: white;
+    /* transition: 0.5s all ease; */
+}
+.main #popup3 .top{
+    width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.main #popup3 .top i{
+    margin: 5px;
+}
+.main #popup3 .bottom{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+   justify-items: center;
+   align-content: center;
+
+}
+.main #popup3 .bottom table{
+    width: 90%;
+    border-collapse: collapse;
+
+}
+.main #popup3 .bottom table tr{
+    padding: 5px 0px;
+     border: 1px solid gray;
+}
+.main #popup3 .bottom table th{
+    border: 1px solid gray;
+}
+.main #popup3 .bottom table td{
+    border: 1px solid gray;
+    text-align: center;
+}
+/* ---------------------------------------------------------- */
+.main #popup4{
+    border: 1px solid gray;
+        border-radius: 10px;
+box-shadow: 0px 2px 2px 0px;
+    width: 300px;
+    position: absolute;
+    top: -300px;
+    left:-20px;
+    background-color: white;
+}
+.main #popup4 .top{
+    width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.main #popup4 .top i{
+    margin: 5px;
+}
+.main #popup4 .bottom{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+   justify-items: center;
+   align-content: center;
+
+}
+.main #popup4 .bottom table{
+    width: 90%;
+    border-collapse: collapse;
+
+}
+.main #popup4 .bottom table tr{
+    padding: 5px 0px;
+     border: 1px solid gray;
+}
+.main #popup4 .bottom table th{
+    border: 1px solid gray;
+}
+.main #popup4 .bottom table td{
+    border: 1px solid gray;
+    text-align: center;
+}
+/* ---------------------------------------------------------- */
+
+.main #popup5{
+    border: 1px solid gray;
+        border-radius: 10px;
+box-shadow: 0px 2px 2px 0px;
+    width: 300px;
+    position: absolute;
+    bottom: -300px;
+    left:-20px;
+    background-color: white;
+}
+.main #popup5 .top{
+    width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.main #popup5 .top i{
+    margin: 5px;
+}
+.main #popup5 .bottom{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+   justify-items: center;
+   align-content: center;
+
+}
+.main #popup5 .bottom table{
+    width: 90%;
+    border-collapse: collapse;
+
+}
+.main #popup5 .bottom table tr{
+    padding: 5px 0px;
+     border: 1px solid gray;
+}
+.main #popup5 .bottom table th{
+    border: 1px solid gray;
+}
+.main #popup5 .bottom table td{
+    border: 1px solid gray;
+    text-align: center;
+}
+/* ---------------------------------------------------------- */
+
+.main #popup6{
+    border: 1px solid gray;
+        border-radius: 10px;
+box-shadow: 0px 2px 2px 0px;
+    width: 300px;
+    position: absolute;
+    bottom: -300px;
+    right:-20px;
+    background-color: white;
+}
+.main #popup6 .top{
+    width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.main #popup6 .top i{
+    margin: 5px;
+}
+.main #popup6 .bottom{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+   justify-items: center;
+   align-content: center;
+
+}
+.main #popup6 .bottom table{
+    width: 90%;
+    border-collapse: collapse;
+
+}
+.main #popup6 .bottom table tr{
+    padding: 5px 0px;
+     border: 1px solid gray;
+}
+.main #popup6 .bottom table th{
+    border: 1px solid gray;
+}
+.main #popup6 .bottom table td{
+    border: 1px solid gray;
+    text-align: center;
+}
+/* ---------------------------------------------------------- */
+
+.main #popup7{
+    border: 1px solid gray;
+        border-radius: 10px;
+box-shadow: 0px 2px 2px 0px;
+    width: 300px;
+    position: absolute;
+    top: -300px;
+    right:-20px;
+    background-color: white;
+}
+.main #popup7 .top{
+    width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.main #popup7 .top i{
+    margin: 5px;
+}
+.main #popup7 .bottom{
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+   justify-items: center;
+   align-content: center;
+
+}
+.main #popup7 .bottom table{
+    width: 90%;
+    border-collapse: collapse;
+
+}
+.main #popup7 .bottom table tr{
+    padding: 5px 0px;
+     border: 1px solid gray;
+}
+.main #popup7 .bottom table th{
+    border: 1px solid gray;
+}
+.main #popup7 .bottom table td{
+    border: 1px solid gray;
+    text-align: center;
+}
+/* ---------------------------------------------------------- */
+
